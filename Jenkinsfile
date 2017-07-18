@@ -26,7 +26,7 @@ node {
     stage('Push image') {
         
 		
-		sh "\$(aws ecr get-login)
+		sh "\$(aws ecr get-login --no-include-email --region ap-southeast-1)
 		sh "docker tag christie-cowork:latest 038930456275.dkr.ecr.ap-southeast-1.amazonaws.com/christie-cowork:latest"
 		sh "docker push 038930456275.dkr.ecr.ap-southeast-1.amazonaws.com/christie-cowork:latest"
 		
