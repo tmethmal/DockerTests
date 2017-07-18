@@ -30,6 +30,6 @@ node {
 		sh "docker tag christie-cowork:latest 038930456275.dkr.ecr.ap-southeast-1.amazonaws.com/christie-cowork:latest"
 		sh "docker push 038930456275.dkr.ecr.ap-southeast-1.amazonaws.com/christie-cowork:latest"
 		
-        }
+        
     }
 }
